@@ -1,0 +1,46 @@
+# WordPress Plugin Gitignore
+
+# WordPress core files
+.wp-env/
+wp-config.php
+wp-config-local.php
+
+# Development files
+.DS_Store
+Thumbs.db
+*.log
+*.env
+.env.local
+
+# Node modules
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Build files
+*.min.css.map
+*.min.js.map
+
+# WordPress uploads (if testing locally)
+wp-content/uploads/
+
+# Transient files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Backup files
+*.bak
+*~

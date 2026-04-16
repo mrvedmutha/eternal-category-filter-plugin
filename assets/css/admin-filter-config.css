@@ -1,0 +1,206 @@
+/**
+ * Admin Filter Configuration Styles
+ *
+ * Basic styling for the filter configuration repeater interface.
+ *
+ * @package Eternal_Product_Category_Filter
+ */
+
+/* Repeater styles */
+.filter-group-row {
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	padding: 15px;
+	background: #f9f9f9;
+}
+
+.filter-group-header {
+	margin-bottom: 10px;
+}
+
+.filter-group-options {
+	margin-top: 15px;
+}
+
+.filter-options-list {
+	min-height: 20px;
+}
+
+.filter-option-row {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #e0e0e0;
+	background: #fff;
+}
+
+/* Add/Remove button styles */
+.remove-filter-group-button,
+.remove-filter-option-button {
+	color: #a00;
+}
+
+.remove-filter-group-button:hover,
+.remove-filter-option-button:hover {
+	color: #800;
+}
+
+/* Accordion styles for product edit page */
+.eternal-filter-accordion.accordion {
+	border: 1px solid #ddd;
+	background: #fff;
+}
+
+.accordion-section.eternal-accordion-section {
+	border-bottom: 1px solid #ddd;
+}
+
+.accordion-section.eternal-accordion-section:last-child {
+	border-bottom: none;
+}
+
+.accordion-section.eternal-accordion-section button.accordion-trigger.eternal-accordion-trigger,
+button.accordion-trigger.eternal-accordion-trigger {
+	padding: 12px 15px !important;
+	cursor: pointer;
+	display: flex !important;
+	flex-direction: row !important;
+	align-items: center !important;
+	gap: 8px !important;
+	background: #f9f9f9 !important;
+	transition: background-color 0.2s ease;
+	border: none !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	width: 100% !important;
+	text-align: left !important;
+	font-size: 13px !important;
+	font-weight: 600 !important;
+	color: #021f1d !important;
+	margin: 0 !important;
+	line-height: 1.4 !important;
+	min-height: auto !important;
+	appearance: none !important;
+}
+
+.accordion-section.eternal-accordion-section button.accordion-trigger.eternal-accordion-trigger:hover,
+button.accordion-trigger.eternal-accordion-trigger:hover {
+	background: #f0f0f0 !important;
+}
+
+.accordion-section.open button.accordion-trigger.eternal-accordion-trigger,
+.accordion-section.open .accordion-trigger.eternal-accordion-trigger {
+	background: #fff !important;
+}
+
+.accordion-section.eternal-accordion-section button.accordion-trigger.eternal-accordion-trigger:focus,
+button.accordion-trigger.eternal-accordion-trigger:focus {
+	box-shadow: none !important;
+	outline: 1px dotted #666;
+}
+
+.accordion-icon {
+	flex-shrink: 0;
+	width: 16px;
+	height: 16px;
+	position: relative;
+	display: inline-block;
+}
+
+.accordion-icon::before,
+.accordion-icon::after {
+	content: '';
+	position: absolute;
+	background-color: #2271b1;
+	transition: transform 0.2s ease;
+}
+
+.accordion-icon::before {
+	top: 6px;
+	left: 5px;
+	width: 2px;
+	height: 4px;
+}
+
+.accordion-icon::after {
+	top: 4px;
+	left: 3px;
+	width: 4px;
+	height: 2px;
+}
+
+.accordion-section.open .accordion-icon::before {
+	transform: rotate( 90deg );
+}
+
+.accordion-section.open .accordion-icon::after {
+	transform: rotate( 90deg );
+}
+
+.accordion-title {
+	font-weight: 600;
+	font-size: 13px;
+	color: #2271b1;
+}
+
+.accordion-content.eternal-accordion-content {
+	padding: 15px;
+	border-top: 1px solid #eee;
+	background: #fff;
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+/* Loading state */
+.eternal-filters-loading {
+	color: #666;
+	font-style: italic;
+}
+
+.eternal-filters-error {
+	color: #a00;
+}
+
+/* Frontend filter widget styles */
+.eternal-product-filters-widget {
+	margin-bottom: 20px;
+}
+
+.eternal-filter-group {
+	margin-bottom: 15px;
+}
+
+.eternal-filter-group-title {
+	font-weight: bold;
+	margin-bottom: 8px;
+	color: #021f1d;
+}
+
+.eternal-filter-option {
+	display: block;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.eternal-filter-option input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+.eternal-filter-option-name {
+	margin-right: 5px;
+}
+
+.eternal-filter-count {
+	color: #868686;
+	font-size: 0.9em;
+}
+
+.eternal-filters-clear-all {
+	display: inline-block;
+	margin-top: 10px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.eternal-filters-clear-all:hover {
+	color: #021f1d;
+}

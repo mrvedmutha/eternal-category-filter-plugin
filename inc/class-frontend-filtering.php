@@ -192,6 +192,10 @@ class Eternal_Filter_Frontend {
 			echo '<h3>' . esc_html( $atts['title'] ) . '</h3>';
 		}
 
+		// TODO: DEBUG - Remove console.log after verifying frontend filters work
+		// Log widget rendering to console
+		echo '<script>console.log("✓ ETERNAL FILTERS: Widget rendered for category ID: ' . esc_js( $category_id ) . '");</script>';
+
 		// Filters will be loaded dynamically by JavaScript.
 		echo '<div class="eternal-filters-container" id="eternal-filters-container">';
 		echo '<p class="eternal-filters-loading">' . esc_html( eternalFiltersData.strings.loading ) . '</p>';

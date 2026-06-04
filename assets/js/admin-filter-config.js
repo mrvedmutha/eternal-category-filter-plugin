@@ -90,10 +90,10 @@
 
 		// Initialize option indices for existing groups.
 		$( '.filter-options-list' ).each( function() {
-			const groupIndex = $( this ).data( 'group-index' );
+			const gIdx = $( this ).data( 'group-index' );
 			const optionCount = $( this ).find( '.filter-option-row' ).length;
-			optionIndices[groupIndex] = optionCount;
-			groupIndex = Math.max( groupIndex, parseInt( groupIndex ) + 1 );
+			optionIndices[gIdx] = optionCount;
+			groupIndex = Math.max( groupIndex, parseInt( gIdx ) + 1 );
 		} );
 
 		// Add filter group button.
